@@ -12,3 +12,6 @@ class Donkey:
 
     def feed(self):
         return f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%y")}'
+
+    def __str__(self):
+        return f"{self.name} the {self.species} is available to pet during the {self.shift} shift."

@@ -11,3 +11,6 @@ class Frog:
 
     def feed(self):
         return f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%y")}'
+
+    def __str__(self):
+        return f"{self.name} is a {self.species}"
